@@ -24,6 +24,12 @@ class Encounter:
         #df.drop('Race + alignment', axis=1, inplace=True)
         #cleaning unused columns
         df.drop(['HP','Armor','Speed'], axis=1, inplace=True)
+
+        for n in name:
+            self.names.append(n)
+            self.monster[name] = {}
+                #or
+            self.monster[name] # = monster class object.
         
 
 
